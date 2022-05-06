@@ -174,6 +174,9 @@ function buildIdsRequest( value,  begin,  end) {
 }
 
 function artistsToString( artists) {
+  if (artists.length==0){
+    return ""
+  }
   let result = artists[0]['name'];
 
   for (let i = 1; i < artists.length; i++) {
@@ -203,15 +206,16 @@ var myInit = { method: 'GET',
 
 let features=(await (await fetch(url,myInit)).json())['audio_features'];
 
-
-
+console.log("features",features)
 
     for (let j = 0; j < features.length; j++) {
-      features[j]['artist'] =
-          artistsToString(value[j + i]['track']['artists']);
+      if (features[j] == null) {
+        continue
+      }
+      features[j]['artist'] = artistsToString(value[j + i]['track']['artists']);
       features[j]['title'] = value[j + i]['track']['name'];
     }
-    trackMetrics.push(...features);
+    trackMetrics.push(...features.filter(n=>n));
   }
   return trackMetrics;
 }
