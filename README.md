@@ -1,5 +1,5 @@
 # Rearrange your Spotify music according to their proximity
-Using the t-SNE algorithm, the Spotify API and a GUI.
+using the t-SNE algorithm, the Spotify API and a GUI.
 
 # [Test it online!](https://wd400.github.io/Spotify_t-sne_playlist/)
 
