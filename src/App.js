@@ -515,7 +515,7 @@ let arr=[];
         // Display the login page
         <SpotifyAuth
         noCookie={true}
-                    redirectUri='http://127.0.0.1:3001/callback'
+                    redirectUri='https://wd400.github.io/Spotify_t-sne_playlist/callback'
           clientID='abbc32cff69c46928a3b4e0bb7f43fab'
           scopes={[Scopes.playlistReadPrivate,Scopes.playlistModifyPrivate]}
           onAccessToken={(token) => setToken(token)}
