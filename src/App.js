@@ -303,7 +303,7 @@ function App() {
   const contextRef=useRef(null);
 
 
-  const [playlistid,setPlaylistid]=useState("37i9dQZF1DWWGI3DKkKGzJ");
+  const [playlistid,setPlaylistid]=useState("");
 
   const [currentMusic,setcurrentMusic]=useState("");
 
@@ -482,7 +482,7 @@ setplaylistSaving(false);
   }}>
       {token ? (
         <div>
-                  <input type="text" value="37i9dQZF1DWWGI3DKkKGzJ" onChange={(e) =>setPlaylistid(e.target.value)} />
+                  <input type="text"  onChange={(e) =>setPlaylistid(e.target.value)} />
                   <input disabled={playlistLoading} type="button" value="Load playlist" onClick={()=>{
                     setplaylistLoading(true);                 
                   }
@@ -519,7 +519,7 @@ let arr=[];
         // Display the login page
         <SpotifyAuth
         noCookie={true}
-                    redirectUri='https://wd400.github.io/Spotify_t-sne_playlist/'
+                    redirectUri='http://localhost:3000/Spotify_t-sne_playlist/'
           clientID='abbc32cff69c46928a3b4e0bb7f43fab'
           scopes={[Scopes.playlistReadPrivate,Scopes.playlistModifyPrivate]}
           onAccessToken={(token) => setToken(token)}
