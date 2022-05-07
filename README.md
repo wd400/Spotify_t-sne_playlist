@@ -21,3 +21,6 @@ using the t-SNE algorithm, the Spotify API and a GUI.
 3- Copy the app client ID to App.js (default abbc32cff69c46928a3b4e0bb7f43fab)  
 4- In the repo execute "yarn run start"  
 5- Go to http://127.0.0.1:3000  
+
+
+Asociated Reddit thread: https://www.reddit.com/r/MachineLearning/comments/uk9mg3/p_tsne_to_view_and_order_your_spotify_tracks/
