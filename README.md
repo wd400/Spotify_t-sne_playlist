@@ -19,7 +19,7 @@ using the t-SNE algorithm, the Spotify API and a GUI.
 1- Clone this repository  
 2- Create a Spotify app https://developer.spotify.com/dashboard/applications  
 3- Copy the app client ID to App.js (default abbc32cff69c46928a3b4e0bb7f43fab)  
-4- Go to "Edit settings" and add  "http://127.0.0.1:3000/" to the Redirect URIs list
+4- Go to "Edit settings" and add  "http://127.0.0.1:3000/" to the Redirect URIs list  
 5- In package.json change homepage value to "http://127.0.0.1:3000"  
 6- In the repo execute "yarn run start"  
 7- Go to http://127.0.0.1:3000  
