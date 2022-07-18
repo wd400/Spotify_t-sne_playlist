@@ -174,7 +174,7 @@ function buildIdsRequest( value,  begin,  end) {
 }
 
 function artistsToString( artists) {
-  if (artists.length==0){
+  if (artists.length===0){
     return ""
   }
   let result = artists[0]['name'];
